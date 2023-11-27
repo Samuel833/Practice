@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Document</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#article">Article</a></li>
+        <li><a href="#aside">Aside</a></li>
+        <li><a href="#lorem">Lorem </a></li>
+      </ul>
+    </header>
+    <style>
+      /*The default style on q replicated on the blockquote to have the quote also*/
+      q::before,
+      blockquote::before {
+        content: open-quote;
+      }
+      q::after,
+      blockquote::after {
+        content: close-quote;
+      }
+    </style>
+
+    <h1>This is heading h1</h1>
+    <section id="about" aria-labelledby="about_heading">
+      <!--Aria label Gives our element/label a landmark, an accessible name-->
+      <h1 id="about">This is heding 1</h1>
+      <section>
+        <h1>This is heading 1 nested inside another section</h1>
+      </section>
+    </section>
+    <article id="article">
+      <h1>This is heading 1</h1>
+    </article>
+    <aside id="aside">
+      <h1>This is heading 1</h1>
+    </aside>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+
+    <blockquote cite="http://oluwasegun.dev">
+      <!--The blockquote is a block element-->
+      Watching video tutorials alone without practice is BS.<!--If we have a source for this then we can cite-->
+      <cite>Mr Oluwasegun talkToMuch 2023</cite>
+    </blockquote>
+    <section>
+      <p id="lorem">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora fuga
+        eveniet assumenda ratione dolores perspiciatis tempore nesciunt cumque
+        quos officiis animi reiciendis, id ad, ipsam earum minima at suscipit
+        deleniti?
+      </p>
+    </section>
+    <q cite=""
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <cite>Mr Nobody</cite> </q
+    ><!--An inline element-->
+
+    <code> &lt;div&gt;Let there be light and there was light&lt;div/&gt; </code>
+    I entered <samp>git-push</samp> and the terminal printed
+    <samp>Everything-to-date</samp>
+    <p>The power of 2 is 2<sup>n</sup> Where n is an integer</p>
+    <p>The chemical formula for Carbon-dioxide is CO<sub>2</sub></p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      aliquam eaque nam inventore animi consequatur non sint nisi id dolore ad
+      officia quibusdam praesentium, ducimus modi saepe omnis expedita
+      exercitationem!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem id soluta
+      minima vitae dolorem voluptatem debitis consectetur est esse doloremque
+      reiciendis architecto magni odit a, tempore nulla aspernatur assumenda
+      delectus!
+    </p>
+    <a href="../month2Week2Wednesday/table.html">Check out this table</a>
+    <a href="tel:+2348050982249">Call us</a>
+    <a href="mailto:alex@smith.com">Send us a mail</a>
+    <a href="sms:+2348050982249">Call us</a>
+    <footer>
+      &copy;
+      <a href="www.github.com/oluwasegun Sowunmi" target="_blank">Oluwasegun</a>
+      &lt;/&gt;
+    </footer>
+    <a href="#top">Go back up</a>
+  </body>
+</html>

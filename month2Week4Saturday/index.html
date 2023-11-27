@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Ways to aooly CSS-->
+    <!--1. Using the style attribute(Mostly called inline styling because it is written within the html)-->
+    <!--2. Using the style tag which is also known as the internal styling-->
+    <!--3. css style via the link tag regarded as external style-->
+
+    <a href="">Classes notes</a>
+    <p style="color: red; font-size: 3rem; background: blue">
+      This is the first paragraph
+    </p>
+    <style>
+      a {
+        color: purple;
+        font-size: 5rem;
+        background: grey;
+      }
+    </style>
+    <p class="external">
+      This CSS was applied via the link tag which we popularly call the external
+      <abbr title="Cascading Style Sheet">CSS</abbr>
+    </p>
+
+    <div class="large-screen">
+      <p>I only show up in large screen</p>
+    </div>
+    <div class="small-screen">
+      <p>Meanwhile you will only see me on small ones</p>
+    </div>
+  </body>
+</html>

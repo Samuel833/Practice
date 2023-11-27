@@ -1,0 +1,10 @@
+.box{
+  text-align: center;
+  text-transform: capitalize;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="./gmail.png"
+      alt="Mail"
+      loading="lazy"
+      role="img"
+      width="100"
+      height="100"
+    /><!--Aspect ratio used in css allows us to use the width and height in our html-->
+    <picture>
+      <img
+        src="./gmail.png"
+        alt="Gmail"
+        srcset="./outdoor.jpg 400w, skype.png 800w"
+        sizes="(max-width: 800px) 400px, 800px"
+      /><!--When the width of the screen is 800px it displays the picture that is 400px the when the screen is more than 800px it displays the 800px -->
+    </picture>
+    <!--It can also take the sourceset(srcset) attribute which means we are trying to take multiple images together-->
+    <!--The major goal of the srcset is to enable us to have responsive images-->
+    <picture>
+      <source src="" srcset="" sizes="" type />
+      <source src="" srcset="" sizes="" type />
+      <source src="" srcset="" sizes="" type />
+      <img src="" alt="" />
+    </picture>
+    <audio src="" controls autoplay></audio>
+
+    <video src="" poster="" controls autoplay></video>
+
+    <video src="">
+      <source>
+      <track kind="chapters" src="" srclang=""/>
+      <track kind="chapters" src="" srclang=""/>
+      <track kind="chapters" src="" srclang=""/>
+      <track kind="chapters" src="" srclang=""/>
+    </video>
+
+    <!--iframes-->
+    <div><iframe src="https://oluwasetemi.dev" frameborder="0"></iframe></div>
+    <!--Canvas-->
+    <canvas></canvas>
+
+    <!--svg-It is a scalable element i.e you dont need to write a mobile responsive code for it as it will always adjust to the container available to it-->
+    svg
+  </body>
+</html>

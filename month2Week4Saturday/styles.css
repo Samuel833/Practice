@@ -1,0 +1,146 @@
+.external {
+  color:red;
+  font-size: 7rem;
+  border: solid;
+}
+.large-screen{
+  display: none;
+}
+/* media queries*/
+@media(condition){
+    
+}
+.small-screen{
+  font-size: 5rem;
+    color: blue;
+    background: yellow;
+}
+div{
+  color: green;
+}
+
+@media(max-width: 500px){
+  .external{
+    color: yellow;
+    font-size: 1.5rem;
+  }
+}
+
+@media(min-width: 300px){
+  .large-screen{
+    display: block;
+    font-size: 4rem;
+    color: yellow;
+    background: blue;
+  }
+  .small-screen{
+    display: none;
+    font-size: 5rem;
+    color: blue;
+    background: yellow;
+  }
+}
+@media(orientation: portrait){
+  .external{
+    border: dashed;
+  }
+}
+
+/*Simple selectors*/
+/*Universal selsctors*/
+*{
+  color: green;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*Type*/
+/*Consists mainly of html elements*/
+p, div, body{
+  font-size: 3rem;
+}
+
+.class{
+  /*style rules*/
+}
+
+#id{
+  /*style rules*/
+}
+
+/*Attributes using square brackets*/
+[title]{
+  text-decoration: underline;
+  color: black;
+}
+
+/*The s refers to as an operator that makes the value to be case sensitive
+[title=Value s]{
+  border: solid;
+}
+[title],
+[title=Value]
+
+[title$="sheet"]/*Picks only titles whose values ends with sheet
+
+[title^="cascade"]/*picks all attribute which value starts with the word cascade
+[title*="value"]/*Picks all attribute that has the value of "value"
+
+/*Shorthand value
+margin
+border*/
+
+/*Pseudo classes refers to the state which an element can exist in :hover :active :focus :line :visited */
+p:hover {
+  font-size: 2rem;
+  color:pink;
+  transition: all 3s;
+}
+l:nth-child(even){}
+
+tr:nth-child(2n+1){}
+
+/* pseudo element */
+/*A pseudo element is created and not a real element*/
+::before{
+  content: "&"; /*we wwill notice how before every paragraph there is an amper sign*/
+  font-size: 3rem;
+}
+::after{
+  content: ">"; /*we wwill notice after every paragraph there is a gt sign*/
+  font-size: 3rem;
+}
+li::marker{/*The marker is the dot before the listed item*/
+  content: "none";
+}
+::selection{/*effects to make when content int he browser is selected*/
+  color: burlywood;
+}
+
+/* combinators...Include| */
+/* descendants which is represented by space*/
+div.container p{
+  text-decoration: wavy;
+}
+/* next siblings represented by + */
+li + li {
+  margin-top: 10px;
+}
+/*direct sibling */
+p > strong{
+  font-weight: 900;
+}
+/* Subsequent sibling represented by the ~ sign*/
+div ~ p {
+  padding: 10px;
+}
+
+/* Compound selectors--Occurs when you combine multiple selectors together using the comma also known as the grouping slelector*/
+p, div, strong, em{
+
+}
+
+/*Checkout selectors explained*/  

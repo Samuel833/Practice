@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <style>
+    table, th, td{
+      border: 1px solid green;
+    }
+  </style>
+</head>
+<body>
+  <table>
+     <!-- caption, colgroup, thead(tr, td th), tbody(tr, td, th)-->
+     <caption>A table showing the name and age of altschool students</caption>
+     <thead>
+      <tr>
+        <th>NameXXXXXXXXX</th>
+        <th>Age</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr><!--The first row-->
+        <td>Sowunmi Oluwasegun</td>
+        <td>99</td>
+      </tr>
+      <tr><!--The first row-->
+        <td>Sowunmi Oluwasegun</td><!--Takes two attributes the rowspan and the colspan-->
+        <td>100</td>
+      </tr>
+      <tr><!--The second row-->
+        <td>Tabby</td>
+        <td>19</td>
+      </tr>
+      <tr><!--The third row-->
+        <td>Jerry</td>
+        <td>190</td>
+      </tr>
+     </tbody>
+     <tfoot>
+      <tr>
+        <td>
+          &copy; Oluwasegun 2023
+
+        </td>
+      </tr>
+     </tfoot>
+  </table>
+
+
+  <table>
+    <tbody>
+      <thead >
+        <th>Team Name</th>
+        <th>Games Played</th>
+        <th>Games Won</th>
+        <th>Games Lost</th>
+        <th>Games Drawn</th>
+        <th>Goals For</th>
+        <th>Goals Against</th>
+        <th>Goal Difference</th>
+        <th>Points</th>
+      </thead>
+      <tr>
+        <th>Manchester United</th>
+        <td colspan="2" rowspan="3">8</td>
+        <!--<td>4</td>-->
+        <td>1</td>
+        <td>3</td>
+        <td>10</td>
+        <td>15</td>
+        <td>-5</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <th>Manchester City</th>
+        <td colspan="9">9</td>
+      </tr>
+      <tr>
+        <td>Just another one to test</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <table>
+    <colgroup>
+    </colgroup>
+  </table>
+</body>
+</html> 
